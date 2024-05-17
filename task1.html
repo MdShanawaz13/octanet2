@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #7ae9fc;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #333;
+    color: #f4f1f1;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #ccf308;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('gym-image.jpg') center/cover;
+    color: #f60202;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4c20d;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e0a800;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section p {
+    margin-bottom: 2rem;
+}
+
+.class {
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">My Gym</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to My Gym</h1>
+            <p>Your journey to fitness starts here!</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p> Our gym boasts state-of-the-art facilities meticulously designed to cater to all fitness levels and preferences. From cutting-edge cardio machines to an extensive selection of free weights and resistance training equipment, we provide everything you need to sculpt your body, boost your endurance, and unleash your inner athlete. Our spacious workout areas offer ample room for both solo sessions and group activities, ensuring that you can exercise comfortably and confidently, no matter your preferred style of training.But it's not just about the equipment—it's about the expertise and support that set us apart. Our team of certified trainers is dedicated to guiding you on your fitness journey, offering personalized coaching, motivation, and accountability every step of the way. Whether you're a beginner looking to kick-start your fitness routine or a seasoned athlete aiming to break through plateaus, our trainers are here to provide the knowledge, encouragement, and inspiration you need to reach your full potential. </p>
+        </div>
+    </section>
+    <section id="classes">
+        <div class="container">
+            <h2>Our Classes</h2>
+            <div class="class">
+                <h3>Yoga</h3>
+                <p>Join our yoga classes to find inner peace and flexibility.</p>
+            </div>
+            <div class="class">
+                <h3>Cardio</h3>
+                <p>Get your heart pumping with our intense cardio workouts.</p>
+            </div>
+            <div class="class">
+                <h3>Strength Training</h3>
+                <p>Build muscle and improve your strength with our specialized training sessions.</p>
+            </div>
+        </div>
+    </section>
+    <section id="schedule">
+        <div class="container">
+            <h2>Class Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                </tr>
+                <tr>
+                    <td>Yoga</td>
+                    <td>Mon, Wed, Fri 7:00 AM</td>
+                    <td>Rock</td>
+                </tr>
+                <tr>
+                    <td>Cardio</td>
+                    <td>Tue, Thu 6:00 PM</td>
+                    <td>Jack</td>
+                </tr>
+                <tr>
+                    <td>Strength Training</td>
+                    <td>Mon, Wed 5:00 PM</td>
+                    <td>Tom</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Thank You </p>
+        </div>
+    </footer>
+</body>
+</html>
